@@ -1,5 +1,10 @@
+import os
+
+from cs50 import SQL
+
+
 #mengimport aplikasi flask untuk web
-from flask import Flask
+from flask import Flask, flash, jsonify, render_template, request, session
 
 #mengatur nama aplikasi
 app = Flask(__name__)
